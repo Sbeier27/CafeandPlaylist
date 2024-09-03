@@ -15,10 +15,8 @@ public class Order {
     //a list holding the items in the current order
 
     public static void addItem(String item,Double price){
-        if(Cafe.Menu.containsValue(item)){
-            CurrentOrder.add(item);
-            totalAmount.add(price);
-        }
+        CurrentOrder.add(item);
+        totalAmount.add(price);
     }/*a method which checks if the menu item being ordered is on the menu and if so
     *adds it to the current order*/
 
